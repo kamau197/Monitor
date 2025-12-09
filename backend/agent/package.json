@@ -1,0 +1,20 @@
+{
+  "name": "app-monitor-agent",
+  "version": "1.0.0",
+  "main": "agent.js",
+  "type": "module",
+  "scripts": {
+    "start": "node agent.js",
+    "build": "pkg . --targets node18-win-x64,node18-macos-x64,node18-linux-x64 --output dist/app-monitor"
+  },
+  "dependencies": {
+    "inquirer": "^9.2.7",
+    "node-fetch": "^3.3.2",
+    "dotenv": "^16.3.1",
+    "crypto-js": "^4.2.0",
+    "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  }
+}
